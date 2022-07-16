@@ -3,13 +3,13 @@ import { ListItem, ListItemButton, ListItemText, ListItemIcon, Grid } from '@mui
 import { useDispatch, useSelector } from 'react-redux';
 import { setActiveNote } from '../../store/journal/journalSlice';
 
-export const SidebarItem = ({ title,body, id, date, imageUrls =[] }) => {
+export const SidebarItem = ({ title,body, id, date, imageUrls  =[] }) => {
 
   const dispatch = useDispatch() 
 
   const onclickNote = () => {
 
-    dispatch( setActiveNote({ title,body, id, date, imageUrls }) )
+    dispatch( setActiveNote({ title,body, id, date, imageUrls  }) )
   }
 
   return (
